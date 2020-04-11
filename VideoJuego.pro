@@ -9,7 +9,6 @@ SOURCES += \
 
 HEADERS += \
     Cliente.h \
-    DataBase.h \
     Empleado.h \
     Factura.h \
     Persona.h \

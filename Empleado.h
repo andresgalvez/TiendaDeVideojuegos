@@ -10,7 +10,7 @@ private:
     string idEmpleado;
 public:
     Empleado();
-    Empleado(int,string,string);
+    Empleado(int,string,string,string,string,string,string,string) ;
     string getFechaContratacion();
     string getIdEmpleado();
     void setFechaContratacion(string);

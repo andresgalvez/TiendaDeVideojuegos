@@ -13,11 +13,11 @@ private:
     string estado;
     string forma_de_pago;
     float iva;
-    Cliente cliente;
-    Empleado empleado;
+    Cliente *cliente;
+    Empleado *empleado;
 public:
     Factura();
-    Factura(float,string,string,string,string,float) : Cliente(string,float);
+    Factura(float,string,string,string,string,float,Cliente*, Empleado *);
     string getPrecioTotal();
     string getFecha();
     string geIdFactura();

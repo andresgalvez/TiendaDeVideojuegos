@@ -1,5 +1,4 @@
 #include <iostream>
-#include <QSqlDatabase>
 using namespace std;
 
 int main()

@@ -9,8 +9,8 @@ private:
     string idCliente;
     float comprasTotales;
 public:
-    Cliente();
-    Cliente(string,float);
+
+    Cliente(string,float,string,string,string,string,string);
     string getIdCliente();
     float getComprasTotales();
 
