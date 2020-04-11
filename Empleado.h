@@ -17,6 +17,9 @@ public:
     void getIdEmpleado(string);
 
     void toString();
+    int getSalario() const;
+    void setSalario(int value);
 };
 
 #endif // EMPLEADO_H
+
