@@ -131,6 +131,9 @@ void Empleado::setIdEmpleado(string a){this->idEmpleado= a;}
 void Empleado::toString(){
     cout<<"Empleado = [salario: " <<  this->salario << " , fecha contratacion: "<<this->fechaContratacion  <<
         ", ID Empleado:" << this->idEmpleado <<"]" <<endl;
+    cout<<"Persona = [Nombre: " <<  this->getNombre() << " , telefono: "<<this-> getTelefono() <<
+              ", correo:" << this->getCorreo() << ", fecha: " <<this-> getFecha() <<",  direccion "<<this-> getDireccion()
+    <<"]" <<endl;
 };
 
 /*CLIENTE*/
@@ -148,4 +151,7 @@ void Cliente::setComprasTotales(float a){this->comprasTotales= a;}
 void Cliente::toString(){
     cout<<"Cliente = [ID cleinte: " <<  this->idCliente << " , Compras Totales: "<<this-> comprasTotales
         <<"]" <<endl;
+    cout<<"Persona = [Nombre: " <<  this->getNombre() << " , telefono: "<<this-> getTelefono() <<
+              ", correo:" << this->getCorreo() << ", fecha: " <<this-> getFecha() <<",  direccion "<<this-> getDireccion()
+    <<"]" <<endl;
 };
