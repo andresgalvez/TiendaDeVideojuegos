@@ -64,6 +64,11 @@ void Persona::setFecha(string a){this->fecha = a;}
 string Persona::getDireccion(){return this->direccion;}
 void Persona::setDireccion(string a){this->direccion = a;}
 
+void Persona::toString(){
+    cout<<"Persona = [Nombre: " <<  this->nombre << " , telefono: "<<this-> telefono <<
+          ", correo:" << this-> correo<< ", fecha: " <<this-> fecha <<",  direccion "<<this-> direccion
+       <<"]" <<endl;
+};
 
 /*FACTURA*/
 Factura::Factura(float precioTotal,string fecha,string estado,string idFactura,string forma_de_pago,float iva, Cliente *cliente , Empleado *empleado){
