@@ -28,5 +28,6 @@ public:
     void setNombre(string);
     void setDesarrolladora(string);
     void setStock(int);
+
     void toString();
 };

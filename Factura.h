@@ -31,6 +31,7 @@ public:
     void setEstado(string);
     void setForma_de_Pago(string);
     void setIva(float);
+
     void toString();
 
     Cliente *getCliente();

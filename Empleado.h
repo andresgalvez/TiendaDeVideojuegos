@@ -16,9 +16,10 @@ public:
     void setFechaContratacion(string);
     void setIdEmpleado(string);
 
-    void toString();
     int getSalario();
     void setSalario(int);
+
+    void toString();
 };
 
 #endif // EMPLEADO_H

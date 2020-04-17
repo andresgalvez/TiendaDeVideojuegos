@@ -24,6 +24,7 @@ public:
     void setCorreo(string);
     void setFecha(string);
     void setDireccion(string);
+
     void toString();
 };
 

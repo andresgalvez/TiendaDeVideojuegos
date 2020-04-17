@@ -32,6 +32,14 @@ void Videojuego::setDesarrolladora(string a){this->desarrolladora = a;}
 int Videojuego::getStock(){return this->stock;}
 void Videojuego::setStock(int a){this->stock = a;}
 
+void Videojuego::toString(){
+    //Empleado=[id=3,nombre=jdajsd,.....]
+    cout<<"Videojuego = [Fecha de lanzamiento: " <<  this->fechaLanzamiento << " , Precio: "<<this-> precio <<
+", genero:" << this-> genero<< ", nombre: " <<this-> nombre <<",  desarrolladora "<<this-> desarrolladora <<
+ ", stock: "<<this-> stock <<"]" <<endl;
+};
+
+
 /*PERSONA*/
 Persona::Persona(string nombre,string telefono,string correo,string fecha,string direccion){
     this-> nombre = nombre;
