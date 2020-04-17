@@ -105,6 +105,14 @@ void Factura::setEmpleado(Empleado *value){this->empleado = value;}
 Cliente *Factura::getCliente(){return this->cliente;}
 void Factura::setCliente(Cliente *value){this->cliente = value;}
 
+void Factura::toString(){
+    cout<<"Factura = [precio total: " <<  this->precioTotal << " , fecha: "<<this-> fecha <<
+        ", estado:" << this-> estado <<" "<<", ID Factura: " <<this-> idFactura <<",  forma de pago "<<this-> forma_de_pago
+        <<", Iva:"<<this->iva <<"]" <<endl;
+        this->empleado->toString();
+        this->cliente->toString();
+};
+
 /*EMPLEADO*/
 Empleado::Empleado(int salario,string fechaContratacion,string idEmpleado,string nombre,string telefono,string correo,string fecha,string direccion) :Persona(nombre,telefono, correo,fecha, direccion){
     this-> salario= salario;
@@ -120,6 +128,11 @@ void Empleado::setFechaContratacion(string a){this->fechaContratacion= a;}
 string Empleado::getIdEmpleado(){return this->idEmpleado;}
 void Empleado::setIdEmpleado(string a){this->idEmpleado= a;}
 
+void Empleado::toString(){
+    cout<<"Empleado = [salario: " <<  this->salario << " , fecha contratacion: "<<this->fechaContratacion  <<
+        ", ID Empleado:" << this->idEmpleado <<"]" <<endl;
+};
+
 /*CLIENTE*/
 Cliente::Cliente(string idCliente,float comprasTotales,string nombre,string telefono,string correo,string fecha,string direccion):Persona(nombre,telefono, correo,fecha, direccion){
     this->idCliente = idCliente;
@@ -131,3 +144,8 @@ void Cliente::setIdCliente(string a){this->idCliente= a;}
 
 float Cliente::getComprasTotales(){return this->comprasTotales;}
 void Cliente::setComprasTotales(float a){this->comprasTotales= a;}
+
+void Cliente::toString(){
+    cout<<"Cliente = [ID cleinte: " <<  this->idCliente << " , Compras Totales: "<<this-> comprasTotales
+        <<"]" <<endl;
+};
