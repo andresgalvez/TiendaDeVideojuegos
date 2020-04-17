@@ -14,11 +14,11 @@ public:
     string getFechaContratacion();
     string getIdEmpleado();
     void setFechaContratacion(string);
-    void getIdEmpleado(string);
+    void setIdEmpleado(string);
 
     void toString();
-    int getSalario() const;
-    void setSalario(int value);
+    int getSalario();
+    void setSalario(int);
 };
 
 #endif // EMPLEADO_H

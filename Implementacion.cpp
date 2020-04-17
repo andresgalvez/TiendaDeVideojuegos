@@ -98,9 +98,23 @@ Empleado::Empleado(int salario,string fechaContratacion,string idEmpleado,string
     this-> fechaContratacion = fechaContratacion;
     this-> idEmpleado = idEmpleado;
 };
+int Empleado::getSalario(){return this->salario;}
+void Empleado::setSalario(int a){this->salario = a;}
+
+string Empleado::getFechaContratacion(){return this->fechaContratacion;}
+void Empleado::setFechaContratacion(string a){this->fechaContratacion= a;}
+
+string Empleado::getIdEmpleado(){return this->idEmpleado;}
+void Empleado::setIdEmpleado(string a){this->idEmpleado= a;}
 
 /*CLIENTE*/
 Cliente::Cliente(string idCliente,float comprasTotales,string nombre,string telefono,string correo,string fecha,string direccion):Persona(nombre,telefono, correo,fecha, direccion){
     this->idCliente = idCliente;
     this->comprasTotales = comprasTotales;
 };
+
+string Cliente::getIdCliente(){return this->idCliente;}
+void Cliente::setIdCliente(string a){this->idCliente= a;}
+
+float Cliente::getComprasTotales(){return this->comprasTotales;}
+void Cliente::setComprasTotales(float a){this->comprasTotales= a;}
