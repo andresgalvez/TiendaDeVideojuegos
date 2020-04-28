@@ -5,19 +5,22 @@
 using namespace std;
 class Empleado:public Persona{
 private:
-    int salario;
+    float salario;
     string fechaContratacion;
     string idEmpleado;
 public:
     Empleado();
-    Empleado(int,string,string,string,string,string,string,string) ;
-    string getFechaContratacion();
-    string getIdEmpleado();
-    void setFechaContratacion(string);
-    void setIdEmpleado(string);
+    Empleado(float,string,string,string,string,string,string,string) ;
+    ~Empleado(){};
 
-    int getSalario();
-    void setSalario(int);
+    float getSalario();
+    void setSalario(float);
+
+    string getFechaContratacion();
+    void setFechaContratacion(string);
+
+    string getIdEmpleado();
+    void setIdEmpleado(string);
 
     void toString();
 };

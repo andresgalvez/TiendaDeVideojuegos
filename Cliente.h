@@ -3,6 +3,7 @@
 #include<iostream>
 #include<Persona.h>
 
+
 using namespace std;
 class Cliente:public Persona{
 private:
@@ -10,7 +11,10 @@ private:
     float comprasTotales;
 public:
 
+    Cliente();
     Cliente(string,float,string,string,string,string,string);
+    ~Cliente(){};
+
     string getIdCliente();
     float getComprasTotales();
 

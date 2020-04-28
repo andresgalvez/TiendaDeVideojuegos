@@ -4,7 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 QT += sql
 SOURCES += \
-        Implementacion.cpp \
+        Cliente.cpp \
+        Empleado.cpp \
+        Factura.cpp \
+        Persona.cpp \
+        Service.cpp \
+        Videojuego.cpp \
         main.cpp
 
 HEADERS += \
@@ -12,5 +17,6 @@ HEADERS += \
     Empleado.h \
     Factura.h \
     Persona.h \
+    Service.h \
     VideoJuego.h \
     Videojuego.h

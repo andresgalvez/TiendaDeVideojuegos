@@ -6,15 +6,19 @@ using namespace std;
 
 class Videojuego{
 private:
-    string fechaLanzamiento;
+
+    int stock ;
     float precio;
     string genero;
     string nombre;
     string desarrolladora;
-    int stock ;
+    string fechaLanzamiento;
+
 public:
     Videojuego();
-    Videojuego(string,float,string,string,string,int);
+    Videojuego(int,float,string,string,string,string);
+    ~Videojuego(){};
+
     string getFechaLanzamiento();
     float getPrecio();
     string getGenero();

@@ -11,8 +11,10 @@ private:
     string fecha;
     string direccion;
 public:
-    Persona();
+    Persona(){};
     Persona(string,string,string,string,string);
+    ~Persona(){};
+
     string getNombre();
     string getTelefono();
     string getCorreo();

@@ -8,16 +8,21 @@ using namespace std;
 class Factura{
 private:
     float precioTotal;
+    float iva;
+
     string fecha;
     string idFactura;
     string estado;
     string forma_de_pago;
-    float iva;
     Cliente *cliente;
     Empleado *empleado;
+
 public:
+
     Factura();
-    Factura(float,string,string,string,string,float,Cliente*, Empleado *);
+    Factura(float,float,string,string,string,string,Cliente*, Empleado*);
+    ~Factura(){};
+
     float getPrecioTotal();
     string getFecha();
     string getIdFactura();
@@ -35,9 +40,9 @@ public:
     void toString();
 
     Cliente *getCliente();
-    void setCliente(Cliente *value);
+    void setCliente(Cliente *);
     Empleado *getEmpleado();
-    void setEmpleado(Empleado *value);
+    void setEmpleado(Empleado *);
 };
 
 
