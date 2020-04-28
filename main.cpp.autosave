@@ -251,11 +251,11 @@ int main()
         case 12: {
             int atributo, aux;
             string nuevoValor;
-            listar(ser.listaEmpleados);
-            cout<<"Que empleado deseas modificar: "<<endl;
+            listar(ser.listaFacturas);
+            cout<<"Que factura deseas modificar: "<<endl;
             cin>>aux;
             aux--;
-            cout<<"Que atributo deseas modificar de Empleado: "<<endl;
+            cout<<"Que atributo deseas modificar de Factura: "<<endl;
             cout<<"1. salario"<<endl;
             cout<<"2. fecha de contratacion"<<endl;
             cout<<"3. id"<<endl;
@@ -302,7 +302,7 @@ int main()
                 break;
             }
             }
-            listar(ser.listaEmpleados);
+            listar(ser.listaFacturas);
             break;
         }
         case 13: {
