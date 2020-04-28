@@ -93,6 +93,58 @@ int main()
             break;
         }
         case 9: {
+            int atributo, aux;
+            string nuevoValor;
+            listar(ser.listaEmpleados);
+            cout<<"Que empleado deseas modificar: "<<endl;
+            cin>>aux;
+            cout<<"Que atributo deseas modificar de Empleado: "<<endl;
+            cout<<"1. salario"<<endl;
+            cout<<"2. fecha de contratacion"<<endl;
+            cout<<"3. id"<<endl;
+            cout<<"4. nombre"<<endl;
+            cout<<"5. telefono"<<endl;
+            cout<<"6. correo"<<endl;
+            cout<<"7. fecha"<<endl;
+            cout<<"8. direccion"<<endl;
+            cin>>atributo;
+
+            cout<<"Ingresa el nuevo valor: ";
+            cin>>nuevoValor;
+            switch (atributo) {
+            case 1: {
+                ser.listaEmpleados.at(aux)->setSalario(stof(nuevoValor));
+                break;
+            }
+            case 2: {
+                ser.listaEmpleados.at(aux)->setFechaContratacion(nuevoValor);
+                break;
+            }
+            case 3: {
+                ser.listaEmpleados.at(aux)->setIdEmpleado(nuevoValor);
+                break;
+            }
+            case 4: {
+                ser.listaEmpleados.at(aux)->setNombre(nuevoValor);
+                break;
+            }
+            case 5: {
+                ser.listaEmpleados.at(aux)->setTelefono(nuevoValor);
+                break;
+            }
+            case 6: {
+                ser.listaEmpleados.at(aux)->setCorreo(nuevoValor);
+                break;
+            }
+            case 7: {
+                ser.listaEmpleados.at(aux)->setFecha(nuevoValor);
+                break;
+            }
+            case 8: {
+                ser.listaEmpleados.at(aux)->setDireccion(nuevoValor);
+                break;
+            }
+            }
             break;
         }
         case 10: {
@@ -105,15 +157,39 @@ int main()
             break;
         }
         case 13: {
+            int aux;
+            listar(ser.listaEmpleados);
+            cout<<"Ingrese el empleado que desea eliminar: ";
+            cin>>aux;
+            ser.listaEmpleados.erase(ser.listaEmpleados.begin() + aux - 1);
+            listar(ser.listaEmpleados);
             break;
         }
         case 14: {
+            int aux;
+            listar(ser.listaClientes);
+            cout<<"Ingrese el cliente que desea eliminar: ";
+            cin>>aux;
+            ser.listaClientes.erase(ser.listaClientes.begin() + aux - 1);
+            listar(ser.listaClientes);
             break;
         }
         case 15: {
+            int aux;
+            listar(ser.listaVideojuegos);
+            cout<<"Ingrese el empleado que desea eliminar: ";
+            cin>>aux;
+            ser.listaVideojuegos.erase(ser.listaVideojuegos.begin() + aux - 1);
+            listar(ser.listaVideojuegos);
             break;
         }
         case 16: {
+            int aux;
+            listar(ser.listaFacturas);
+            cout<<"Ingrese el empleado que desea eliminar: ";
+            cin>>aux;
+            ser.listaFacturas.erase(ser.listaFacturas.begin() + aux - 1);
+            listar(ser.listaFacturas);
             break;
         }
         default:
