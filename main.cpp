@@ -251,58 +251,48 @@ int main()
         case 12: {
             int atributo, aux;
             string nuevoValor;
-            listar(ser.listaEmpleados);
-            cout<<"Que empleado deseas modificar: "<<endl;
+            listar(ser.listaFacturas);
+            cout<<"Que factura deseas modificar: "<<endl;
             cin>>aux;
             aux--;
-            cout<<"Que atributo deseas modificar de Empleado: "<<endl;
-            cout<<"1. salario"<<endl;
-            cout<<"2. fecha de contratacion"<<endl;
-            cout<<"3. id"<<endl;
-            cout<<"4. nombre"<<endl;
-            cout<<"5. telefono"<<endl;
-            cout<<"6. correo"<<endl;
-            cout<<"7. fecha"<<endl;
-            cout<<"8. direccion"<<endl;
+            cout<<"Que atributo deseas modificar de Factura: "<<endl;
+            cout<<"1. Precio total"<<endl;
+            cout<<"2. iva"<<endl;
+            cout<<"3. fecha"<<endl;
+            cout<<"4. id"<<endl;
+            cout<<"5. estado"<<endl;
+            cout<<"6. forma de pago"<<endl;
             cin>>atributo;
 
             cout<<"Ingresa el nuevo valor: ";
             cin>>nuevoValor;
             switch (atributo) {
             case 1: {
-                ser.listaEmpleados.at(aux)->setSalario(stof(nuevoValor));
+                ser.listaFacturas.at(aux)->setPrecioTotal(stof(nuevoValor));
                 break;
             }
             case 2: {
-                ser.listaEmpleados.at(aux)->setFechaContratacion(nuevoValor);
+                ser.listaFacturas.at(aux)->setIva(stof(nuevoValor));
                 break;
             }
             case 3: {
-                ser.listaEmpleados.at(aux)->setIdEmpleado(nuevoValor);
+                ser.listaFacturas.at(aux)->setFecha(nuevoValor);
                 break;
             }
             case 4: {
-                ser.listaEmpleados.at(aux)->setNombre(nuevoValor);
+                ser.listaFacturas.at(aux)->setIdFactura(nuevoValor);
                 break;
             }
             case 5: {
-                ser.listaEmpleados.at(aux)->setTelefono(nuevoValor);
+                ser.listaFacturas.at(aux)->setEstado(nuevoValor);
                 break;
             }
             case 6: {
-                ser.listaEmpleados.at(aux)->setCorreo(nuevoValor);
-                break;
-            }
-            case 7: {
-                ser.listaEmpleados.at(aux)->setFecha(nuevoValor);
-                break;
-            }
-            case 8: {
-                ser.listaEmpleados.at(aux)->setDireccion(nuevoValor);
+                ser.listaFacturas.at(aux)->setForma_de_Pago(nuevoValor);
                 break;
             }
             }
-            listar(ser.listaEmpleados);
+            listar(ser.listaFacturas);
             break;
         }
         case 13: {
