@@ -3,29 +3,29 @@
 /*EMPLEADO*/
 
 Empleado::Empleado(){
-//    string comprasTotalesAux, nombreAux, telefonoAux, correoAux, fechaAux, direccionAux;
-//    cout<<"Ingrese el id del cliente: ";
-//    cin>>this->idCliente;
-//    cout<<"Ingrese las compras totales: ";
-//    cin>>comprasTotalesAux;
-//    this->comprasTotales = stof(comprasTotalesAux);
-//    cout<<"Ingrese el nombre: ";
-//    cin>>nombreAux;
-//    this->setNombre(nombreAux);
-//    cout<<"Ingrese el telefono: ";
-//    cin>>telefonoAux;
-//    this->setTelefono(telefonoAux);
-//    cout<<"Ingrese el correo: ";
-//    cin>>correoAux;
-//    this->setCorreo(correoAux);
-//    cout<<"Ingrese la fecha de nacimiento: ";
-//    cin>>fechaAux;
-//    this->setFecha(fechaAux);
-//    cout<<"Ingrese la direccion: ";
-//    cin>>direccionAux;
-//    this->setDireccion(direccionAux);
+    string nombreAux, telefonoAux, correoAux, fechaAux, direccionAux;
+    cout<<"Ingrese el salario del empleado: ";
+    cin>>this->salario;
+    cout<<"Ingrese la fecha de contratación: ";
+    cin>>this->fechaContratacion;
+    cout<<"Ingrese el id del empleado: ";
+    cin>>this->idEmpleado;
+    cout<<"Ingrese el nombre: ";
+    cin>>nombreAux;
+    this->setNombre(nombreAux);
+    cout<<"Ingrese el telefono: ";
+    cin>>telefonoAux;
+    this->setTelefono(telefonoAux);
+    cout<<"Ingrese el correo: ";
+    cin>>correoAux;
+    this->setCorreo(correoAux);
+    cout<<"Ingrese la fecha de nacimiento: ";
+    cin>>fechaAux;
+    this->setFecha(fechaAux);
+    cout<<"Ingrese la direccion: ";
+    cin>>direccionAux;
+    this->setDireccion(direccionAux);
 }
-
 
 Empleado::Empleado(float salario,string fechaContratacion,string idEmpleado,string nombre,string telefono,string correo,string fecha,string direccion) :Persona(nombre,telefono, correo,fecha, direccion){
     this-> salario= salario;

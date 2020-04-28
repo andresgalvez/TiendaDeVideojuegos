@@ -11,21 +11,6 @@ void listar(vector<tipo*> lista);
 
 int main()
 {
-    ofstream outfile1 ("videojuegos.txt");
-    outfile1 << "my text here!" << std::endl;
-    outfile1.close();
-
-    ofstream outfile2 ("facturas.txt");
-    outfile2 << "my text here!" << std::endl;
-    outfile2.close();
-
-    ofstream outfile3 ("empleados.txt");
-    outfile3 << "my text here!" << std::endl;
-    outfile3.close();
-
-    ofstream outfile4 ("clientes.txt");
-    outfile4 << "my text here!" << std::endl;
-    outfile4.close();
 
     Service ser;
 
@@ -80,9 +65,17 @@ int main()
             break;
         }
         case 5: {
+            cout<<endl<<"EMPLEADOS"<<endl;
+            listar(ser.listaEmpleados);
+            ser.listaEmpleados.push_back(new Empleado());
+            listar(ser.listaEmpleados);
             break;
         }
         case 6: {
+            cout<<endl<<"CLIENTES"<<endl;
+            listar(ser.listaClientes);
+            ser.listaClientes.push_back(new Cliente());
+            listar(ser.listaClientes);
             break;
         }
         case 7: {
@@ -127,7 +120,7 @@ int main()
             break;
         }
         ser.escribirTodo();
-        system( "read -n 1 -s -p \"Presiona una tecla para continuar\"" );
+        system( "pause" );
     }while(opcion != 0);
 
     return 0;
