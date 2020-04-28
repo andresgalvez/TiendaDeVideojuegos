@@ -2,6 +2,7 @@
 #include <Service.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <fstream>
 
 using namespace std;
 
@@ -10,6 +11,22 @@ void listar(vector<tipo*> lista);
 
 int main()
 {
+    ofstream outfile1 ("videojuegos.txt");
+    outfile1 << "my text here!" << std::endl;
+    outfile1.close();
+
+    ofstream outfile2 ("facturas.txt");
+    outfile2 << "my text here!" << std::endl;
+    outfile2.close();
+
+    ofstream outfile3 ("empleados.txt");
+    outfile3 << "my text here!" << std::endl;
+    outfile3.close();
+
+    ofstream outfile4 ("clientes.txt");
+    outfile4 << "my text here!" << std::endl;
+    outfile4.close();
+
     Service ser;
 
     int opcion;

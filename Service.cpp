@@ -247,7 +247,6 @@ void Service::escribirFacturas(){
 void Service::escribirVideojuegos(){
     ofstream myfile;
     myfile.open ("videojuegos.txt");
-    //int stock,float precio,string genero,string nombre,string desarrolladora, string fechaLanzamiento
     for(int i = 0 ; i < listaVideojuegos.size(); i++){
         myfile<<
                  listaVideojuegos.at(i)->getStock()<<"#"<<
